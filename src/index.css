@@ -1,13 +1,76 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+p {
+    margin: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+a {
+    text-decoration: none;
+    color: black;
+}
+
+@media (max-width:767px) {
+    .card {
+        max-width: 1280px;
+        width: 98%;
+        margin: 0 auto;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+}
+
+.card_main {
+    display: flex;
+    justify-content: center;
+}
+
+.card_info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 15px;
+    max-width: 450px;
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+
+.card_left {
+    padding-right: 15px;
+    display: flex;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.card_left img {
+    border-radius: 30px;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.card_info .card_right {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.card_info .card_right p.cardTitle {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    color: #333;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: sans-serif;
+    margin-bottom: 15px;
+    line-height: 1.3rem;
+}
+
+.card_info .card_right span p {
+    font-size: 13px;
+    font-family: sans-serif;
+    color: #9d9898;
+    font-weight: 700;
 }
